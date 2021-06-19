@@ -32,13 +32,13 @@ layout: default
         <!-- Home Post List -->
         {% for post in site.posts limit : 5 %}
 
-        <article class="post-preview">
+        <article class="post-preview" align="Right" dir="rtl">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
+            <h2 align="right" dir="rtl" class="post-title">{{ post.title }}</h2>
             {% if post.subtitle %}
-            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+            <h3 align="right" dir="rtl" class="post-subtitle">{{ post.subtitle }}</h3>
             {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+            <h3 align="right" dir="rtl" class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
             {% endif %}
           </a>
           <p class="post-meta">Posted by
@@ -48,7 +48,7 @@ layout: default
             {{ site.author }}
             {% endif %}
             on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
+            {{ post.date | date: '%B %d, %Y' }} <!--&middot; {% include read_time.html content=post.content %}-->
           </p>
         </article>
 
@@ -58,7 +58,7 @@ layout: default
 
         <!-- Pager -->
         <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
+          <!--<a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">دیدن تمام پست‌ها &rarr;</a>-->
         </div>
 
       </div>
