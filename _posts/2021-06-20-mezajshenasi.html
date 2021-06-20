@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "طبع‌سنج آنلاین"
+title: "تست مزاج‌شناسی"
 date: 2020-01-27 23:45:13 -0400
 background: '/img/posts/02.jpg'
 ---
@@ -8,7 +8,7 @@ background: '/img/posts/02.jpg'
 
 <p dir="rtl" align="right">به چند سوال پاسخ دهید و نوع طبع خود را بفهمید.</p>
 <p dir="rtl" align="right">در پاسخ به سوالات، تمام طول عمر خود، از کودکی تا به حال را در نظر بگیرید.</p>
-
+<hr/>
 
 
 <div dir="rtl" align="right">
@@ -38,6 +38,9 @@ background: '/img/posts/02.jpg'
 
   <input type="radio" id="p3_2" name="p3" value="s" align="right">
   <label for="p3_2" align="right" dir="rtl">یخچال</label><br>
+
+  <input type="radio" id="p3_3" name="p3" value="n" align="right">
+  <label for="p3_3" align="right" dir="rtl">هیچ‌کدام</label><br>
 
 
 
@@ -642,7 +645,7 @@ function results(){
 	
 	var q=[];
 	var lq=[];
-	var qtwo=[2,3,6,7,12,13,16,17,18,19,20,21,22,23,28,29,30,31,39,40,41,42,43,44,45,46,47,49,50,51,52,53,54,55,56];
+	var qtwo=[2,6,7,12,13,16,17,18,19,20,21,22,23,28,29,30,31,39,40,41,42,43,44,45,46,47,49,50,51,52,53,54,55,56];
 	document.getElementById("answer").innerHTML = "tesst1";
 	for(let i=0;i<=58;i++){
 		q.push([]);
